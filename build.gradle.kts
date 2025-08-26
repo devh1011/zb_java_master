@@ -10,9 +10,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    // JUnit 5
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+
+    // AssertJ
+    testImplementation("org.assertj:assertj-core:3.24.2") // 최신 버전 사용
 }
 
 tasks.test {
